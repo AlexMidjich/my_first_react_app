@@ -27,6 +27,15 @@ p{
  font-size: 16px;
  line-height: 150%;
 }
+button{
+ margin: 20px;
+ padding: 10px;
+ border: none;
+ background-color: #12FF96;
+}
+button:hover{
+ background-color: #FF0000;
+}
 
 .header{
  width: 100%;
@@ -59,8 +68,12 @@ p{
  color: #333333;
  list-style-type: none;
 }
+#sidebar ul li{
+ padding-bottom: 5px;
+}
 #sidebar p {
  color: #333333;
+ padding: 20px;
 }
 
 #maincontent{

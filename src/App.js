@@ -24,6 +24,6 @@ const object = {
  greeting : 'Hello',
  name : 'Alexander'
 };
-//const isVisible = true;
+
 
 export default App;
