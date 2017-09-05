@@ -9,9 +9,9 @@ class App extends Component {
   render() {
    return (
       <div>
-       <Header value={object} />
+       <Header value={object} isVisible={true} />
        <div className="content">
-        <Content />
+        <Content title="My first React app" />
         <Sidebar />
        </div>
        <Footer />
@@ -24,5 +24,6 @@ const object = {
  greeting : 'Hello',
  name : 'Alexander'
 };
+//const isVisible = true;
 
 export default App;
