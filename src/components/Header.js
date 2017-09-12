@@ -6,7 +6,7 @@ class Header extends Component {
     return (
      <div className='header'>
       <h1>Working with React</h1>
-       <p>{this.props.value.greeting} {this.props.value.name}</p>
+       <p>{this.props.value.greeting} {this.props.name} {this.props.value.hej}</p>
      </div>
     );
    }else{

@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import Paragraph from './Paragraph';
+import InputField from './InputField';
 
 class Content extends Component {
  state = {
-  text: 'myText',
+  text: '',
   toggle: true
  };
  actionClick = () => {
   this.setState({ toggle: !this.state.toggle})
+ }
+ changeText = (e) => {
+  this.setState({text: e.target.value});
  }
   render() {
    const renderText = this.state.toggle ? null : 'Hello! I only show up when you press the button.';
@@ -23,6 +27,8 @@ class Content extends Component {
         <p>{ renderButtonText }</p>
        </button>
        { renderText }
+       <InputField changeText={this.changeText} value={this.state.text} />
+       <h3>{this.state.text}</h3>
       </div>
     );
   }

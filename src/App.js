@@ -2,17 +2,27 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Content from './components/Content';
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/sidebar/Sidebar';
 import Footer from './components/Footer';
 
 class App extends Component {
+
+//State is a object that is used in the header component.
+ state = {
+  name: ''
+ }
+//handleChange is a function that gives the parameter in state a value.
+ handleChange = (e) => {
+  this.setState({ name: e.target.value });
+ }
+
   render() {
    return (
       <div>
-       <Header value={object} isVisible={true} />
+       <Header value={object} isVisible={true} name={ this.state.name } />
        <div className="content">
         <Content title="My first React app" />
-        <Sidebar />
+        <Sidebar handleChange={ this.handleChange } value={ this.state.name } />
        </div>
        <Footer />
       </div>
@@ -22,8 +32,11 @@ class App extends Component {
 
 const object = {
  greeting : 'Hello',
- name : 'Alexander'
+ hej : 'good to see you!'
 };
+
+
+
 
 
 export default App;

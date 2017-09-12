@@ -57,25 +57,6 @@ button:hover{
  flex-direction: row-reverse;
 }
 
-#sidebar{
- background-color: #cccccc;
- width: 30%;
- height: 70vh;
- display: flex;
- flex-direction: column;
-}
-#sidebar ul{
- color: #333333;
- list-style-type: none;
-}
-#sidebar ul li{
- padding-bottom: 5px;
-}
-#sidebar p {
- color: #333333;
- padding: 20px;
-}
-
 #maincontent{
  background-color: #ffffff;
  width: 70%;

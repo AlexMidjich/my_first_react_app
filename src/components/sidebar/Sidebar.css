@@ -1,0 +1,32 @@
+#sidebar{
+ background-color: #cccccc;
+ width: 30%;
+ height: 70vh;
+ display: flex;
+ flex-direction: column;
+}
+#sidebar ul{
+ color: #333333;
+ list-style-type: none;
+}
+#sidebar ul li{
+ padding-bottom: 5px;
+}
+#sidebar p {
+ color: #333333;
+ padding: 20px;
+}
+.inputfield{
+ width: 100%;
+ height: auto;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ padding-top: 10px;
+}
+.inputfield input{
+ width: 50%;
+ height: 25px;
+ margin-top: 10px;
+}
