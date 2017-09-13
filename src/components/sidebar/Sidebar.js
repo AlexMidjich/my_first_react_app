@@ -44,12 +44,13 @@ class Sidebar extends Component {
     );
   }
 }
+//Displaying two different ways in how to write stateless components
 function PlusButton(props) {
   return (
      <button onClick={ props.plusClick }>Adds 1</button>
   );
 }
-const MinusButton = props => 
+const MinusButton = props =>
   <button onClick={ props.minusClick }>Subtracts 1</button>
 
 export default Sidebar;
