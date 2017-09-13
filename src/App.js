@@ -9,11 +9,17 @@ class App extends Component {
 
 //State is a object that is used in the header component.
  state = {
-  name: ''
+  name: '',
  }
 //handleChange is a function that gives the parameter in state a value.
  handleChange = (e) => {
   this.setState({ name: e.target.value });
+ }
+ plusClick = () => {
+  this.setState({ counter: this.state.counter +1});
+ }
+ minusClick = () => {
+  this.setState({ counter: this.state.counter -1});
  }
 
   render() {
